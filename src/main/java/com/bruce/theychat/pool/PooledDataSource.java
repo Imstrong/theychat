@@ -48,9 +48,9 @@ public class PooledDataSource implements DataSource {
     public Connection getConnection() throws SQLException {
         if (connectionPool.size() > 0) {
             Connection conn = connectionPool.removeFirst();
-            return (Connection) Proxy.newProxyInstance(PooledDataSource.class.getClassLoader(), conn.getClass().getInterfaces(), (Object proxy, Method method, Object[] args) -> {
-                return null;
-            });
+//            return (Connection) Proxy.newProxyInstance(PooledDataSource.class.getClassLoader(), conn.getClass().getInterfaces(), (Object proxy, Method method, Object[] args) -> {
+//                return null;
+//            });
         }
         return null;
     }
