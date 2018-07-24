@@ -2,13 +2,12 @@ package com.bruce.test;
 
 
 
-import javax.media.bean.playerbean.*;
+import javax.media.bean.playerbean.MediaPlayer;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.util.Date;
-import java.util.Properties;
 import java.util.Vector;
 
 public class MP3 extends JFrame implements Runnable {
@@ -438,7 +437,7 @@ public class MP3 extends JFrame implements Runnable {
             setSize(300, 120);
             setVisible(true);
 
-            Properties
+//            Properties
         }
     }
 }
