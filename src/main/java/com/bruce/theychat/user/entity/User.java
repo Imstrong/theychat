@@ -4,6 +4,25 @@ public class User {
     private String userId;
     private String name;
     private String password;
+    private String credentialsSalt;
+
+    private String salt;
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public String getCredentialsSalt() {
+        return credentialsSalt;
+    }
+
+    public void setCredentialsSalt(String credentialsSalt) {
+        this.credentialsSalt = credentialsSalt;
+    }
 
     private int locked;
 
